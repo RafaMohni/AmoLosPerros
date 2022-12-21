@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home),
     path('login.html/', views.login_page),
+    path('Prueba/', include(('Prueba.migrations.urls', 'Prueba')))
 ]
